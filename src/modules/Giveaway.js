@@ -131,7 +131,7 @@ module.exports = class Giveaway {
       const origin = `Author: ${msg.author.tag} • Account: ${this.client.user.tag}`;
       const link = msg.url;
       // Attempt to react
-      const timeout = util.randomInt(delay, delay * 1.5);
+      const timeout = util.randomInt(delay, delay * 0);
       const reacted = await new Promise((fulfill) => {
          setTimeout(async () => {
             try {
